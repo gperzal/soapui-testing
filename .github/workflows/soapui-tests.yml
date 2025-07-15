@@ -1,0 +1,42 @@
+name: 🧪 SoapUI API Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  run-soapui-tests:
+    name: 🚀 Run Functional API Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ☕ Set up Java 11
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
+      - name: 📦 Download & install SoapUI
+        run: |
+          wget https://dl.eviware.com/soapuios/5.8.0/SoapUI-5.8.0-linux-bin.tar.gz
+          tar -xzf SoapUI-5.8.0-linux-bin.tar.gz
+          chmod +x SoapUI-5.8.0/bin/testrunner.sh
+
+      - name: ✅ Execute SoapUI Test Suite
+        run: |
+          ./SoapUI-5.8.0/bin/testrunner.sh \
+            -s"TestUsers" \
+            -c"GetUser" \
+            -r -j -f soapui-reports \
+            ./REST-Project-1-soapui-project.xml
+
+      - name: 📤 Upload Test Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: 🧾 soapui-test-report
+          path: soapui-reports/
