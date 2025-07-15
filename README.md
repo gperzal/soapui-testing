@@ -1,12 +1,11 @@
 # 🧪 Users API Test - SoapUI + CI/CD Demo
 
-<div align="center">https://github.com/gperzal/soapui-testing
-
+<div align="center">
+  
 [![SoapUI](https://img.shields.io/badge/SoapUI-5.8.0-brightgreen.svg)](https://www.soapui.org/)
 [![Java](https://img.shields.io/badge/Java-11-blue.svg)](https://openjdk.org/projects/jdk/11/)
-[![License](https://img.shields.io/badge/license-Educational-lightgrey.svg)](LICENSE)
 
-[![CI/CD](https://github.com/gperzal/soapui-testing/actions/workflows/soapui-tests.yml/badge.svg)](https://github.com/gperzal/soapui-testing/actions)
+[![GitHub Actions CI/CD](https://github.com/gperzal/soapui-testing/actions/workflows/soapui-tests.yml/badge.svg)](https://github.com/gperzal/soapui-testing/actions)
 </div>
 
 ---
