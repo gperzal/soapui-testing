@@ -4,7 +4,7 @@
 
 [![SoapUI](https://img.shields.io/badge/SoapUI-5.8.0-brightgreen.svg)](https://www.soapui.org/)
 [![Java](https://img.shields.io/badge/Java-11-blue.svg)](https://openjdk.org/projects/jdk/11/)
-[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/your-org/your-repo/soapui.yml?label=CI%2FCD)](https://github.com/your-org/your-repo/actions)
+[![CI/CD](https://github.com/gperzal/soapui-testing/actions/workflows/soapui-tests.yml/badge.svg)](https://github.com/gperzal/soapui-testing/actions)
 [![License](https://img.shields.io/badge/license-Educational-lightgrey.svg)](LICENSE)
 
 </div>
